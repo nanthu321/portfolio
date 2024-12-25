@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nantha | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!---------------------header----------------------------->
+    <nav class="nav-bar">
+        <div class="logo">
+            <h1>Nantha</h1>
+        </div>
+        <ul>
+            <li ><a href="#home">HOME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+        </ul>
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+        
+    </nav>
+    <!--------------------home---------------------------------->
+    <div class="home" id="home">
+        <div class="home-content">
+            <div class="head">
+                <h1>Hi There, </h1>
+                <h1>I'm <span>Nanthakumar</span></h1>
+            </div>
+            <p>A dedicated college student currently Studying Diploma Computer Engineering at MSPVL Polytechnic college Tenkasi District Pavoorchatram.  I'm Skilled HTML, CSS, Java Script(basics), Python Flask, .Net Framework(c#), Coding and I am Very Intrested in Full stack Web Development. </p>
+           
+            <div class="media-icons">
+                <a href="https://www.instagram.com/nanthu_321/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nanthakumar-r-b46b1a308/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/nanthu321"><i class="fa-brands fa-github"></i></a>
+            </div>
+          
+        </div>
+
+        <div class="home-img">
+            <img src="nanthu_img.png">
+        </div>
+    </div>
+
+    <!-----------------------portfolio---------------------------------------->
+    <div class="portfolio" id="portfolio">
+        <h1>My Works</h1>
+        <div class="portfolio-img">
+            <div class="col-1">
+                <a href="calculator.html"><img src="calculator.jpg"></a>
+            </div>
+            <div class="col-2">
+                <a href="flipkart.html"><img src="flip.jpg"></a>
+            </div>
+	    <div class="col-2">
+                <a href="clg_web.html"><img src="clg_web.jpg"></a>
+            </div>
+	    <div class="col-2">
+                <a href="pass_gen.html"><img src="password_generator.jpg"></a>
+            </div>
+	    <div class="col-2">
+                <a href="residency.html"><img src="residency.jpg"></a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--------------------------contact---------------------------------->
+    
+    <div class="contact" id="contact">
+        <h1>Contact</h1>
+        <form action="https://formspree.io/f/mjkvdopl" method="POST">
+            <div class="input-box">
+                <div class="contact-col1">
+                    <input type="text" placeholder="Full Name" name="name"><br>
+                    <input type="email" placeholder="E-mail" name="email"><br>
+                    <input type="text" placeholder="Phone Number" name="phone-number"><br>
+                </div>
+                <div class="contact-col2">
+                    <textarea type="text" row="10" placeholder="Your Message" name="message"></textarea><br>
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--------------------------about------------------------------------->
+    <div class="about" id="home">
+    </div>
+    
+
+    <!---------------------------copy-right-------------------------->
+    <div class="copy-right">
+        <div class="cp-media-icon">
+            <a href="https://www.instagram.com/nanthu_321/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nanthakumar-r-b46b1a308/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/nanthu321"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="cp-navbar">
+            <ul class="cp-nav-items">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+            </ul>
+        </div>
+        <div class="copyright-by">
+            <h4>&Copy Right; Nantha | Portfolio, site designed & developed by Nanthakumar.</h4>
+        </div>
+    </div>
+    <script>
+        const menu = document.querySelector('.menu')
+        const menuList = document.querySelector('nav ul')
+        menu.addEventListener('click',()=>{
+            menuList.classList.toggle('showmenu')
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULATOR</title>
+    <style>
+            *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        body{    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;  
+            height: 100vh; 
+            background-color: #ecf0f3;
+        }
+        h1{
+            font-size: 25px;
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif;
+            color:#133c55;
+            margin-bottom: 20px;
+            font-family:sans-serif;
+        }
+        input{
+            width: 224px;
+            height: 40px;
+            text-align: right;
+	    margin-bottom: 20px;
+            border: none;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: 400;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px  #133c55;
+            background-color: whitesmoke;
+        }
+        input:hover{
+            transform: scale(1.01);
+        }
+        .buttons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 8px;
+            width:50%;
+        }
+        .buttons div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        button{
+            background-color: whitesmoke;
+            width: 50px;
+            height:50px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 2px 2px 2px #133c55;
+        }
+        button:hover{
+            transform: scale(1.05);
+        }
+        .buttons div .simple{
+            color: white;
+            background-color: #133c55;
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="output">
+        <input type="text" id="txt_out" placeholder="0" readonly>
+    </div>
+    <div class="buttons">
+        <div>
+            <button onclick="clr()" class="simple">AC</button>
+            <button onclick="del()" class="simple">DEL</button>
+            <button onclick="cal('%')" class="simple">%</button>
+            <button onclick="cal('/')" class="simple">/</button>
+        </div>
+        <div>
+            <button onclick="cal('1')">1</button>
+            <button onclick="cal('2')">2</button>
+            <button onclick="cal('3')">3</button>
+            <button onclick="cal('*')" class="simple">*</button>
+        </div>
+        <div>
+            <button onclick="cal('4')">4</button>
+            <button onclick="cal('5')">5</button>
+            <button onclick="cal('6')">6</button>
+            <button onclick="cal('-')" class="simple">-</button>
+        </div>
+        <div>
+            <button onclick="cal('7')">7</button>
+            <button onclick="cal('8')">8</button>
+            <button onclick="cal('9')">9</button>
+            <button onclick="cal('+')" class="simple">+</button>
+        </div>
+        <div>
+            <button onclick="cal('00')">00</button>
+            <button onclick="cal('0')">0</button>
+            <button onclick="cal('.')">.</button>
+            <button onclick="result()" id="btnequl" class="simple">=</button>
+        </div>
+    </div>
+    <script>
+        var out = document.getElementById('txt_out');
+        function cal(v){  
+            out.value += v;
+        }
+        function result(){
+            if (out.value.includes('/0')){
+                alert('Cannot Divided By Zero');
+                out.value = "0";
+            }
+            try{
+                out.value = eval(out.value)
+            }
+            catch(err){
+                alert("Invalid");
+            }
+        }
+        function clr(){
+            out.value = '';
+        }
+        function del(){
+            out.value = out.value.slice(0,-1);
+        }
+    </script>
+</body>
+</html>

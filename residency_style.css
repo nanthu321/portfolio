@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1%;
+    position: sticky;
+    z-index: 1;
+    top:0;
+}
+
+nav h1{
+    margin-left: 2%;
+    font-weight: 900;
+    font-size: xx-large;
+    color: orange;
+    text-shadow: 1px 1px 1px orange;
+}
+
+nav ul{
+    display: flex;
+    gap:15%;
+    margin-right: 15%;
+    padding: 1%;
+}
+
+nav ul li a{
+    font-size:20px;
+    font-weight: 500;
+    color: white;
+}
+
+nav ul li:hover{
+    border-bottom: 3px solid orange;
+    transition: all 0.2s 0.1s ease-out;
+    a{
+        color: orange;
+        transition: all 0.2s 0.1s ease-in-out;
+    }
+}
+
+main{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+main img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+main h2{
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    font-size: 30px;
+
+}
+.benifits{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.benifits div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+
+.benifits div img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 5px 5px 5px orange;
+}
+
+.benifits div h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: orange;
+}
+
+.welcome{
+    margin-top: 30px;
+    color:black;
+}
+.rooms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:40px;
+}
+
+.rooms div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    border: 0.1px solid rgb(241, 235, 235);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: bisque;
+    box-shadow: 5px 5px 5px orange;
+}
+
+.rooms div h4{
+    font-size: 20px;
+    color: orange;
+    margin-top: 10px;
+}
+
+.rooms div img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    color: white;
+    min-height: 50vh;
+    background-color: black;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:200px;
+    padding: 50px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+footer div h5{
+    font-size: 20px;
+    color: orange;
+}
+
+footer div ul{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+ 
+footer div ul li a{
+    font-size: 18px;
+    color: white;
+}
+
+footer div ul li{
+    font-size: 18px;
+}
+
+.media-icons{
+    display: flex;
+
+}
+button{
+    background-color:orange;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    margin-bottom:10px;
+    font-weight: 900;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+button:hover{
+    transform: scale(1.01);
+}

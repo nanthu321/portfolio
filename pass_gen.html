@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM PASSWORD GENERATOR</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color:#3f7d20;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            flex-wrap: wrap;
+            padding: 5%;
+            
+            background-color: whitesmoke;
+            box-shadow: 5px 5px 5px 3px #72b01d;
+            border: 0.1px solid rgb(235, 227, 227);
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+        }
+        #clr{
+            background-color: #72b01d;
+            border: none;
+            width: 90px;
+            height: 40px;
+
+            font-size: 20px;
+            font-weight: 600;
+            box-shadow: 3px 3px 3px gray;
+            border-radius: 5px;
+            color:white;
+        }
+        #clr:hover{
+            transform: scale(1.04);
+            background-color:#3f7d20;
+            transition: all 0.5s 0.1s;
+        }
+        #btn{
+            background-color:blue;
+            border: none;
+            width: 90px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: 600;
+            box-shadow: 3px 3px 3px gray;
+            border-radius: 5px;
+            color:white;
+        }
+        #btn:hover{
+            transform: scale(1.04);
+            background-color:#3f7d20;
+            transition: all 0.5s 0.1s;
+        }
+        div{
+            display: flex;
+            gap:10%;
+        }
+        input[type="number"]{
+            width: 50%;
+            height: 30px;
+            margin: none;
+            text-indent: 5px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        input[type="text"]{
+            width: 50%;
+            height: 30px;
+            margin: none;
+            text-indent: 5px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        h1{
+            font-weight: 800;
+            font-family: arial;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form class="container">
+        <h1>Random Password Generator</h1>
+        <input type="number" name="length" id="length"  onchange="out()" placeholder="Enter Length of password">
+        <input type="text" id="pass" placeholder="Random password" required>
+        <div>
+            <input type="button" onclick="copy()" value="copy" id="btn" >
+            <input type="reset" id="clr">
+        </div>
+    </form>
+
+    <script>
+        function out(){
+            pass = "";
+            password = "1234567890abcdefghijklmnopqrstuvwxyz@#$&*";
+            const len = document.getElementById('length').value;
+            const out = document.getElementById('pass');
+
+            for(let i=0;i<len;i++)
+                {
+                    pass += password[Math.floor(Math.random()*40)+1];
+                }
+                out.value = pass;
+        }
+        function copy(){
+            const pass = document.getElementById('pass');
+            const btn = document.getElementById('btn');
+            if(pass.value == ""){
+                alert("Pleace Enter the Length of Password...")
+            }
+            else{
+            pass.select();
+            document.execCommand("copy");
+            alert('Password Copied');
+            }
+        }
+        </script>
+</body>
+</html>

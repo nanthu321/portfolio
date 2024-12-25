@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT | COLLEGE</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F5E9F3;
+    margin: 3px;
+}
+header{
+    display: flex;
+    background-color: purple;
+    align-items: center;
+    position: sticky;
+    position: sticky;
+    z-index: 1;
+    top:0;
+}
+#clg_logo{
+    width: 10%;
+    height: 10%;
+    margin-left: 2%;
+}
+.navbar{
+    display: inline-flex;
+    gap:8%;
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.nav-items{
+    color:white;
+    font-size: 23px;
+    font-weight: 800; 
+}
+.nav-items:hover{
+    color:#DDA0DD;
+}
+.btn_apply{    
+    width: 140px;
+    height: 50px;
+    border: none;
+    color: purple;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius:5%;  
+    background-color: #DDA0DD;
+}
+.btn_apply:hover{
+    transform: scale(1.05);
+    background-color:#8A2BE2;
+    color:white ;
+
+}
+.btn-anchor{
+    margin-right: 4%;
+    position: absolute;
+    right: 0;
+    margin-left: 3%;
+}
+/*----------------------------main-content-----------------------------------------*/
+main{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5%;
+}
+.clg-head1,.clg-head2,.clg-head3{
+    color: purple;
+    font-weight: 800;
+}
+.clg-names{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+    gap:10px;
+}
+.clg-img{
+    width:100%;
+    height: 340px;
+    border-radius: 1%;
+    border: 1px solid;
+    border-color:gainsboro;
+    margin-top: 2%;
+}
+
+.about-cont{
+    text-indent: 10%;
+    margin-top: 1%;
+    color: rgb(80, 77, 77);
+    font-size: 17px;
+    letter-spacing: 0.1%;
+}
+/*------------------------label-------------------*/
+.lbl{
+    width: 100%;
+    padding:1.4%;
+    background-color: #e9d2e5;
+    text-align: center;
+    color: purple;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+/*----------------vision-mission-----------------------------*/
+.vision-mission{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10%;
+}
+.vision{
+    width: 50%;
+    padding: 2%;
+}
+.vision p{
+    text-indent: 5%;
+}
+.mission{
+    width: 50%;
+
+    padding: 2%;
+}
+.mission p{
+    text-indent: 5%;
+    text-align: justify;
+}
+/*--------------------founders------------------------------- */
+.founders{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.founders p{
+    text-indent: 10%;
+    margin-top: 1%;
+    font-size: 17px;
+    letter-spacing: 0.1%;
+    text-align: justify;
+    margin-bottom: 2%;  
+}
+.founders img{
+    width: 20%;
+    height: 25%;
+    margin-bottom: 2%;
+}
+/*-------------------correspondent---------------------------*/
+.correspondent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10%;
+}
+.correspondent .correspondent1{
+    width: 50%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+.correspondent .correspondent1 img{
+    width: 60%;
+    height: 60%;
+}
+
+.correspondent .correspondent2{
+    width: 50%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+.correspondent .correspondent2 img{
+    width: 60%;
+    height: 60%;
+}
+/*--------------directors---------------------*/
+.directors p{
+    text-indent: 10%;
+    margin-top: 1%;
+    font-size: 17px;
+    letter-spacing: 0.1%;
+    text-align: justify;
+    margin-bottom: 2%;   
+}
+/*-----------------principal----------------------------*/
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+.principal img{
+    width: 100%;
+    height: 110%;
+}
+/*----------------------advisor------------------------*/
+.advisor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+.advisor img{
+    width: 25%;
+    height: 25%;
+}
+/*-------------------------achievements------------------------------*/
+.achievements ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    margin-bottom: 5%;
+}
+.achievements ul li{
+    list-style-type:disc !important;
+}
+/*----------------------------footer----------------------*/
+footer{
+    background-color:  #DDA0DD;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+    background-image: url(footer-bg.png);
+}
+.footer-contact{
+    border: 0.1px solid;
+    padding: 1%;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: purple;
+
+}
+.footer-contact h2{
+    display: block;
+    text-align: center;
+}
+
+.footer-quick-links{
+    border: 0.1px solid;
+    padding: 1%;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: purple;
+}
+.footer-zones{
+    border: 0.1px solid;
+    padding: 1%;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    border-color: purple;
+}
+.copyright{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding:1.5%;
+    font-weight: 600;
+}
+.copyright a{
+    color:white;
+    font-family: arial;
+}
+.copyright a:hover{
+    border-bottom: 0.1px solid white;
+}
+
+
+    </style>
+</head>
+<body>
+    <!----------------------------------header---------------------------------------------------------------->
+    <header>
+        <img src="mspvl.png" id="clg_logo"/>
+        <ul class='navbar'>
+          <a class='nav-items' href="index.html"><li>Home</li></a>
+          <a class='nav-items' href="about_clg.html"><li>About</li></a>
+          <a class='nav-items' href="course.html"><li>Courses</li></a>
+          <a class='nav-items' href="advantage.html"><li>Advantages</li></a>
+          <a class='nav-items' href="facility.html"><li>Facilities</li></a>
+        </ul>
+        <a class="btn-anchor" href="apply.html"><button class='btn_apply'>Apply Now!</button></a>
+      </header>
+<!---------------------main------------------------------------------------------->
+    <main id="main">
+        <div class='clg-names'>
+          <h3 class='clg-head1'>M.S.P. VELAYUTHA NADAR CHARITY TRUST</h3>
+          <h2 class='clg-head2'>M.S.P. VELAYUTHA NADAR LAKSHMITHAIAMMAL POLYTECHNIC COLLEGE</h1>
+          <h2 class='clg-head3'>PAVOORCHATRAM-627 808.</h1>
+            <h2 class='lbl'>About College</h2>
+          <img class='clg-img'src="clg_img.jpg" alt="" />
+        </div>
+        <!----------------about-clg------------------------->
+        <div class="about-college">
+       
+            <p class='about-cont'>Our Polytechnic College campus is just 3 km away from Pavoorchatram and on the highway of a sprawling 41.2 acres on plain ground a 45 minutes travel by fast express from Tirunelveli. The Western Ghats stand imposingly behind the College serving as a panoramic backdrop while on the front lies the State Highway on which the large fleet of trucks, buses, cars and other vehicles roar by throughout 24 hours a day. The rainfall is just enough to make the living pleasant. Especially when the Courtallam season is on, the place noise and bustle of the summer resort.</p>
+            <p class='about-cont'>The campus being on a virgin land far away from the pollutant generating centres via, cities, factories etc., the atmosphere is as pure as anyone can dream of when the world is passing through difficult times with its eco-balance under threat, as voiced by the environmentalists. The water taken from the ground is crystal - clear and uncontaminated.</p>
+        </div>
+        <!----------------vision-mission------------------------->
+        <h2 class="lbl">Our Vision and Mission</h2>
+        <div class="vision-mission">
+            <div class="vision">
+                <h4 class="lbl">Our Vision</h4>
+                <p>To transform every student into industrial leaders</p>
+            </div>
+            <div class="mission">
+                <h4 class="lbl">Our Mission</h4>
+                <p>To provide Industry Oriented Technical Education to Rural Students through Excellent Teaching and Learning, Interaction with Industry and Continual Improvement of People and Process</p>
+            </div>
+        </div>
+        <!------------------founders------------------------------>
+        <h2 class="lbl">Founders</h2>
+        <div class="founders">
+            <p>M.S.P.Velayutha Nadar Lakshmithaiammal Polytechnic College was established on 14th August 1985 by the dedicated and service minded Thiru M.S.P.V. Kaliappan and Thiru M.S.P.V.Perianan in honour and memory of their parents Late Sri M.S.P Velayutha Nadar & Srimathi Lakshmithaiammal, to serve the rural based students in the most backward area of Tenkasi District and this institution commenced its excellent service on 30th September 1985.</p>
+            <img src="founders.jpg">
+            <h3>  Sri M.S.P.Velayutha Nadar & Srimathi Lakshmithaiammal</h3>
+        </div>
+        <!-----------------correspondent-------------------------->
+        <h2 class="lbl">Correspondent</h2>
+        <div class="correspondent">
+            <div class="correspondent1">
+                <img src="corres1.jpg" alt="">
+                <h3>Shri.M.S.P.V.Kaliappan</h3>
+                <p>Founder of our College</p>
+            </div>
+            <div class="correspondent2">
+                <img src="corres2.jpg" alt="">
+                <h3>Shri.M.S.P.V.Perianan</h3>
+                <p>Founder of Our College</p>
+            </div>
+        </div>
+        <!-------------Board of Directors------------------->
+        <h2 class="lbl">Board of Directors</h2>
+        <div class="directors">
+            <p>Our college is governed by Our Directors Mr.P.Rajesh Sankara kumar and Mr.K.Lakshmi Anand. The Board of Directors acts on behalf of the institutional members to create and maintain a vision for MSPVL Polytechnic college and to determine and ensure that the organization adheres to appropriate standards of performance.</p>
+        </div>
+        <!--------------Principal------------------------------>
+        <h2 class="lbl">Principal</h2>
+        <div class="principal">
+            <img src="principal.jpg" alt="">
+            <h3>Mr.G.Ramesh,M.Tech.,</h3>
+        </div>
+        <!----------------Advisor------------------------>
+        <h2 class="lbl">Advisor</h2>
+        <div class="advisor">
+            <img src="Advisor.jpg" alt="">
+            <h3>Mr.D.Bala Subramanian B.E., M.B.A.</h3>
+        </div>
+        <!----------------Milestones / Achievements-------------------------->
+        <h2 class="lbl">Milestones / Achievements</h2>
+        <div class="achievements">
+            <ul>
+                <li>We are the First polytechnic College in Tenkasi District to obtain Accreditation NBA-AICTE, New Delhi.</li>
+                <li>We are an ISO 9001:2015 Certified by British Standards Institution, for Quality Management System.</li>
+                <li>The completion of twenty-five years is indeed a major milestone in the life of our educational institution.</li>
+                <li>28 State Rank Holders in April 2018 Board Examination.</li>
+                <li>17 State Rank Holders in October 2018 Board Examination.</li>
+                <li>36 Teaching staff got centum results in April 2018 Board Examination.</li>
+                <li>27 Teaching staff got centum results in October 2018 Board Examination.</li>
+                <li>100% Placement for All Branches.</li>
+            </ul>
+        </div>
+    </main>
+    <!-------------------------------footer--------------------------------------------------->
+    <footer id="footer" >
+        <div class="footer-contact">
+            <h2>Contact</h2>
+            <h3>Address</h4>
+            <p>Main Road, Sivagamipuram, Pavoorchatram - 627808</p>
+            <p>Ph: 04633-250255, 251091</p>
+            <a href="">Online Contact Form</a>
+        </div>
+
+        <div class="footer-quick-links">
+            <h2>Quick Links</h2>
+            <h5>Prospectus</h5>
+            <h5>Student Application Form</h5>
+            <h5><a href="">Fees Details</a></h5>
+            <h5>Jobs at MSPVL</h5>
+        </div>
+
+        <div class="footer-zones">
+            <h2>Zones</h2>
+            <h5>Alumini Zone</h5>
+            <h5>Parent Zone</h5>
+            <h5><a href="">Student Zone</a></h5>
+            <h5>Staff Zone</h5>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>&copy; 2024 MSP Velayutha Nadar Lakshmithaiammal Polytechnic College |<a href=""> Privacy Policy & Cookies; Terms of Use User account menu</a></p>
+    </div>
+</body>
+</html>

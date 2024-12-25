@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="residency_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CONTACT</title>
+</head>
+<style>
+     form{
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            gap:10px;
+            box-shadow: 5px 5px 5px rgb(143, 141, 141);
+            background-color:orange;
+            justify-self: center;
+            margin:100px;
+        }
+
+        form h2{
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 700;
+
+        }
+        .btn_group{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        input[type="submit"]{
+            margin-top: 40px;
+            height: 40px;
+            font-size: 15px;
+            font-weight: 550;
+            box-shadow: 4px 4px 4px gray;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            padding: 2px;
+            cursor: pointer;
+        }
+        input[type="submit"]{
+            background-color: black;
+        }
+
+        input[type="submit"]:hover{
+            transform: scale(1.01);
+        }   
+
+        input[type="text"],input[type="number"],input[type="email"]{
+            height: 27px;
+            text-indent: 5px;
+            border-radius: 3px;
+            border: none;
+            font-size: 15px;
+            font-weight: 550;
+        }
+
+        input:focus{
+            outline: none;
+            border-color: #007BFF;
+        }
+        label{
+            font-size: 18px;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+    </style>
+</style>
+<body>
+    <!------------------header------------------------->
+    <nav>
+        <h1>Nantha Residency</h1>
+        <ul>
+            <li><a href="residency.html">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="residency_contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!---------------------main---------------------->
+    <form action="/insert_student" method="post">
+        <h2>CONTACT US</h2>
+        <label for="name">FULL NAME :</label>
+        <input type="text" required name="name">
+        <label for="email">EMAIL ID :</label>
+        <input type="email" required name="email">
+        <label for="mobile">MOBILE NUMBER :</label>
+        <input type="text" required name="mobile">
+        <label for="subject">SUBJECT :</label>
+        <input type="text" name="subject" required>
+        <input type="submit" value="SUBMIT">
+    </form>
+    
+    <footer>
+        <div>
+            <h5>Medias</h5>
+            <ul class="media-icons">
+                    <li><a href="https://www.instagram.com/nanthu_321/?hl=en"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nanthakumar-r-b46b1a308/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/nanthu321"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h5>Contact Info</h5>
+            <ul>
+                <li>+999-555-7770</li>
+                <li>+999-555-7770</li>
+                <li>nanthakumar@gmail.com</li>
+            </ul>
+        </div>
+
+        <div>
+            <h5>Explore</h5>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">ROOMS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

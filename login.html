@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:100px;
+    }
+    form{
+        border: 1px;
+        background-color: rgb(217, 222, 224);
+        padding:31px;
+    }
+    .heading{
+        color:rgb(138, 139, 139)
+    }
+    input{
+        border-radius: 20px;
+        color:rgb(158, 161, 161);
+        border:none;
+        width:400px;
+        height:25px
+    }
+    input:hover{
+        transform: scale(1.04);
+    }
+    #forget{
+        margin-left:290px;
+        margin-top:100px;
+    }
+    #form form #btn1{
+        background-color: blue;
+        border-radius: 20px;
+        width:80px;
+        height:40px;
+        color:white;
+        margin-left:100px;
+        margin-top:20px;
+        margin-bottom:0px;
+        outline: none;
+        border: none;
+    }
+    #btn1:hover{
+        transform: scale(1.20);
+    }
+    #btn2:hover{
+    transform: scale(1.20);
+    }
+    #form form #btn2{
+        outline: none;
+        border-radius: 20px;
+        border-color:blue;
+        width:80px;
+        height:40px;
+        color:blue;
+        margin-top:20px;
+        margin-bottom:0px;
+        margin-left:20px;
+    }
+    #form h1{
+        margin-top:0px;
+    }
+    #form from p{
+        font-weight: bold;
+        color:black;
+    }
+    @media screen and (max-width:760px){
+        #form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        border: 1px;
+        background-color: rgb(217, 222, 224);
+        padding:31px;
+    }
+    .heading{
+        color:rgb(138, 139, 139)
+    }
+    input{
+        border-radius: 20px;
+        color:rgb(158, 161, 161);
+        border:none;
+        width:400px;
+        height:25px
+    }
+    input:hover{
+        transform: scale(1.04);
+    }
+    #forget{
+        margin-left:290px;
+        margin-top:100px;
+    }
+    #form form #btn1{
+        background-color: blue;
+        border-radius: 20px;
+        width:80px;
+        height:40px;
+        color:white;
+        margin-left:100px;
+        margin-top:20px;
+        margin-bottom:0px;
+        outline: none;
+        border: none;
+    }
+    #btn1:hover{
+        transform: scale(1.20);
+    }
+    #btn2:hover{
+    transform: scale(1.20);
+    }
+    #form form #btn2{
+        outline: none;
+        border-radius: 20px;
+        border-color:blue;
+        width:80px;
+        height:40px;
+        color:blue;
+        margin-top:20px;
+        margin-bottom:0px;
+        margin-left:20px;
+    }
+    #form h1{
+        margin-top:0px;
+    }
+    #form from p{
+        font-weight: bold;
+        color:black;
+    }
+        
+    }
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div id="form">
+        <img src="login.jpg">
+        <form action="index.html">
+            <h1>Login</h1>
+            <p class="heading">Get access to your orders, Whislist and Recommendations</p>
+            <p>Enter Email/Mobile Number</p>
+            <input type="text" placeholder="   +91">
+            <p>Enter Password</p>
+            <input type="password"><br>
+            <a id="forget" href="#">Forger password</a><br>
+           <a href="index.html"><button id="btn1">Login</button></a>
+            <button id="btn2">Sign up</button>
+
+        </form>
+
+    </div>
+    <script>
+        function f1()
+        {
+            window.location.href = index.html;
+        }
+    </script>
+</body>
+</html>
