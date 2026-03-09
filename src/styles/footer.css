@@ -1,0 +1,37 @@
+#footer-container {
+    background: #021019;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 6rem 1rem 10%;
+    align-items: center;
+}
+
+.scroll-top {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    box-shadow: var(--btn-shadow);
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .2s linear .2s;
+    background: var(--btn-primary-bg);
+    
+}
+
+.navigation-contaier{
+    display: flex;
+}
+
+ul{
+    display: flex;
+}
+
+#footer-container p{
+    color: var(--color-white);
+    text-align: center;
+}
